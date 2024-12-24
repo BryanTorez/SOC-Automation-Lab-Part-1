@@ -290,40 +290,41 @@ What is the purpose of Wazuh? Well, trigger alerts and perform response actions.
 <br />
 <br />
 <br />
-So far so good. The next one is, Shuffle so we'll type in Shuffle and the purpose of Shuffle is to receive Wasa alert and send responsive actions from Shuffle we want to also enrich ioc's send an email as well as create an alert on the hive click on the up Arrow we'll start with open source intelligence we will type in enrich ioc's click on the down arrow click on text and now we'll say The Hive the hive's purpose is to create an alert in their case management system and finally Shuffle also we'll send an email so I'll type in email the purpose of the email is to send email and responsive actions now without using icons we can kind of see the flow here right so we'll begin with Windows 10 sends an event over to Wasa manager Wasa manager will then look at those events and Trigger alerts or perform responsive actions if required third Wasa will then send an alert over to shuffle Shuffle will receive the Wasa alert and send
+So far so good. The next one is Shuffle. So we'll type in "Shuffle". And the purpose of Shuffle is to receive Wazuh alerts and send responsive actions. From Shuffle, we want to also enrich IOCs, send an email, as well as create an alert on the Hive. Click on the up arrow. We'll start with open-source intelligence. We will type in, "Enrich IOCs'. 
 <br />
 <br />
-<img src="https://snipboard.io/ZpkcYM.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-<img src="https://snipboard.io/EclNLr.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://snipboard.io/xNkFDc.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
 <br />
 <br />
+Click on the down arrow. Click on "text" and now we'll type, "The Hive". The Hive's purpose is to, "Create an alert in their case management" system. 
 <br />
 <br />
-I will walk you through how to configure the servers and endpoints to talk to one another.
+<img src="https://snipboard.io/pGrfKZ.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Day 4
 <br />
 <br />
-The fourth day will be exciting because we will begin generating telemetry that is related to Mimikatz on our endpoint, which will then trigger an alert on Wasa that you created on purpose.
+Finally, Shuffle will send an email. So I'll type, "Email". The purpose of the email is to, "Send email and responsive actions". 
 <br />
 <br />
-Day 5 
+<img src="https://snipboard.io/WtKDoP.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-The final day will be a long one as we will go through how to set up SOAR step by step and integrate everything. This means our Wasah, The Hive, and Shuffle. We will see how alerts get sent over to the SOAR platform and created in the Hive, while automatically emailing analysts such as yourself about the details of the alert along with automated responsive availabilities. 
 <br />
 <br />
-Now that might sound extremely intimidating but don't worry, I'll walk you through it step by step. Now the reason we want to send these alerts over to the Hive is so we can keep track of who is working on the alerts, similar to what a real SOC environment would do, along with sending emails directly to an inbox to review the details of the set alert. 
+Now without using icons. We can kind of see the flow here. So we'll begin with Windows 10 sending an event over to Wazuh manager. Wazuh's manager will then look at those events and trigger alerts or perform responsive actions if required. Third, Wazuh will then send an alert over to Shuffle. Shuffle will receive the Wazuh alert and send responsive actions. Along with enriching IOCs. Sending an alert to The Hive for case management. And sending an email over to the SOC analyst. Hopefully, by following along, you understand that drawing a diagram is not that bad, and doesn't have to be super complicated. Its purpose is to logically show how data will flow and what are the pieces to make everything work.
 <br />
 <br />
-For example, if an IDS alert was generated for a Cobalt Strike, the analyst would then begin by looking at surrounding events and if they identified the user had accessed, let's say a domain called malware.com, prior to the alert. They could then perform additional analysis on that domain. Analysts can utilize domain reputation tools for passive analysis, and if they have the go-ahead, they can perform dynamic analysis by looking at the domain's behavior by accessing it. Using a platform.
+<img src="https://snipboard.io/jZVWnu.jpg" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-You might be asking, Can't you just do everything from Wasa? I mean, kind of, but that's just too simple. I want you to flex your skills, work on your troubleshooting, and get some exposure to SAR and a case management system such as the Hive.
-
-That is it for this intro. I hope you are as excited as I am to get started. If you plan on following along, do set up a GitHub account or a free site if you haven't done so already, because you do want to showcase your work and prove to others that you have built a SOC automation lab.
+<br />
+<br />
+Now we have a diagram built out and ready to go. This will be our reference point going forward. In this example, we are using a total of three hops, one PC, and two servers. Where the Hive and Wazuh will be in the cloud. In the next episode, we'll begin with the installation for our virtual machines. And that is it for this part. I hope you are as excited as I am to build this one out remember to stay curious and do things differently.
+<br />
+<br />
+<br />
+<br />
+<br />
